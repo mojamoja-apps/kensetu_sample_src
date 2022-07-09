@@ -108,4 +108,4 @@
 <script src="{{ asset( cacheBusting('js/common.js') ) }}"></script>
 <script src="{{ asset( cacheBusting('js/admin/company.js') ) }}"></script>
 <script src="https://yubinbango.github.io/yubinbango/yubinbango.js" charset="UTF-8"></script>
-<@stop
+@stop

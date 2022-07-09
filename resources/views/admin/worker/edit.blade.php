@@ -122,4 +122,4 @@
 <script src="{{ asset( cacheBusting('js/admin/worker.js') ) }}"></script>
 </script>
 
-<@stop
+@stop
