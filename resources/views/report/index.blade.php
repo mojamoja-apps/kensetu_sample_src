@@ -30,12 +30,18 @@
                                 <div class="form-group">
                                     <label>日付</label>
                                     <div class="form-inline">
-                                        <input type="text" class="form-control" name="day_st" id="day_st" placeholder="2022/01/01" value="{{ old('day_st', $search['day_st'] ) }}" style="width: 110px;">
+                                        <input type="text" class="form-control" name="day_st" id="day_st"
+                                        placeholder="2022/01/01"
+                                        autocomplete="off"
+                                        value="{{ old('day_st', $search['day_st'] ) }}" style="width: 110px;">
                                         <span class="input-group-append">
                                             <button type="button" class="btn btn-info btn-flat day_today_btn" >今日</button>
                                         </span>
                                         <span class="m-1">～</span>
-                                        <input type="text" class="form-control" name="day_ed" id="day_ed" placeholder="2022/12/31" value="{{ old('day_ed', $search['day_ed'] ) }}" style="width: 110px;">
+                                        <input type="text" class="form-control" name="day_ed" id="day_ed"
+                                        placeholder="2022/12/31"
+                                        autocomplete="off"
+                                        value="{{ old('day_ed', $search['day_ed'] ) }}" style="width: 110px;">
                                         <span class="input-group-append">
                                             <button type="button" class="btn btn-info btn-flat day_today_btn" >今日</button>
                                         </span>

@@ -41,9 +41,15 @@
                         <div class="form-group">
                             <label for="name">工期</label>
                             <div class="form-inline">
-                                <input type="text" class="form-control" name="period_st" id="period_st" placeholder="2022/01/01" value="{{ old('period_st', $site->period_st) }}">
+                                <input type="text" class="form-control" name="period_st" id="period_st"
+                                placeholder="2022/01/01"
+                                autocomplete="off"
+                                value="{{ old('period_st', $site->period_st) }}">
                                 ～
-                                <input type="text" class="form-control" name="period_ed" id="period_ed" placeholder="2022/12/31" value="{{ old('period_ed', $site->period_ed) }}">
+                                <input type="text" class="form-control" name="period_ed" id="period_ed"
+                                placeholder="2022/12/31"
+                                autocomplete="off"
+                                value="{{ old('period_ed', $site->period_ed) }}">
                             </div>
                             @if ($errors->has('period_st'))
                             <code>{{ $errors->first('period_st') }}</code>

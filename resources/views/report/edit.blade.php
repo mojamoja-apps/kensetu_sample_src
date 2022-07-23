@@ -44,7 +44,10 @@
                         <div class="form-group col-lg-3 col-md-5 col-sm-6">
                             <label for="name">作業日</label>
                             <div class="input-group">
-                                <input type="text" class="form-control" name="day" id="day" placeholder="2022/12/31" value="{{ old('day', ($report->day != null ? $report->day->format('Y/m/d') : '') ) }}">
+                                <input type="text" class="form-control" name="day" id="day"
+                                placeholder="2022/12/31"
+                                autocomplete="off"
+                                value="{{ old('day', ($report->day != null ? $report->day->format('Y/m/d') : '') ) }}">
                                 <span class="input-group-append">
                                     <button type="button" class="btn btn-info btn-flat day_today_btn" >今日</button>
                                 </span>
